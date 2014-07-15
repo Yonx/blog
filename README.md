@@ -1,4 +1,8 @@
-blog
+Welcome to Yonx!
 ====
 
-Blogs && Resumes
+Blogs
+----
+
+Resume
+----
