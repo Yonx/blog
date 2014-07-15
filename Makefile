@@ -1,5 +1,5 @@
 MD = markdown_py
-MDFLAGS = -T
+MDFLAGS = 
 H2P = xhtml2pdf
 H2PFLAGS = --html
 SOURCES := $(wildcard *.md)
@@ -15,9 +15,11 @@ pdf: $(OBJECTS_PDF)
 html: $(OBJECTS)
 
 $(OBJECTS_PDF): %.pdf: %.html
-    $(H2P) $(H2PFLAGS) $< > $@ 
+	$(H2P) $(H2PFLAGS) $< > $@ 
 
 $(OBJECTS): %.html: %.md
-    $(MD) $(MDFLAGS) -o $@ $<
+	$(MD) $(MDFLAGS) $< > $@
+
 clean:
-    rm -f $(OBJECTS)
+	rm -f $(OBJECTS)
+	rm -f $(OBJECTS_PDF)
