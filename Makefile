@@ -1,4 +1,4 @@
-MD = markdown
+MD = markdown_py
 MDFLAGS = -T
 H2P = xhtml2pdf
 H2PFLAGS = --html
