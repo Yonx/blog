@@ -7,7 +7,7 @@ github不仅是一个优秀的代码共享管理平台，还支持markdown语法
 如果还有一个vps，那直接将github上的的.md文档同步过去，然后转成.html文件挂在webservice下面，以后直接在github上提交，
 自动同步为vps上的文章，太方便了。
 
-下面就是方法，简单分为两步: 
+下面就是方法，简单分为三步: 
 
 
 ---
@@ -67,6 +67,26 @@ crontab -e
 
 * 这里是每分钟执行一次, 先将github上的最新数据pull下来，然后将.md 转为 .html
 * make的过程看Makefile
+
+
+#### 3. 设置样式表
+
+前两步只是数据流通了，在github上看会有默认的css来控制展现格式，但是到你主机的.md生成的.html没有任何样式，只是原生的html，因此需要设置自己的样式表
+
+markdown生成html的样式表已经有好多，可以找自己喜欢的来用，当然如果喜欢，可以自己做一份自己的。我懒，所以直接拿来。
+
+顺便说句，一个技术人员如果不觉得baidu难用，技术能力是可疑的！
+
+
+```
+cd /home/xuamao/blog/
+git clone https://github.com/jasonm23/markdown-css-themes.git
+```
+
+* 这样，blog文件夹下就有一个markdown-css-themes文件夹，里面有多个样式表可以选择使用。感谢原作者。
+* 使用什么样式，直接定义在header.html中，然后header.html content footer.html的顺序来生成最终的.html页面，具体看Makefile
+* 有了header.html和footer.html，其实还可以做好多东西，可以用JS来控制动态的展现或者添加页面内控制的动作等
+
 
 ---
 
