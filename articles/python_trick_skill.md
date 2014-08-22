@@ -1,6 +1,9 @@
-## Oh Python, My Love...
+# Oh Python, My Love...
 
-理论上, 你只需要掌握print函数，int/long float str等基本数据类型，还有list tuple dict基本容器，你就可以开始写代码了
+理论上, 你只需要掌握print函数，int/long float str等基本数据类型，还有list tuple dict基本容器，你就可以开始写代码了。
+
+
+## 内省/inspect
 
 如果你想了解除了print，还有那些函数可以直接用的，请输入：
 ```
@@ -53,5 +56,15 @@ end:  string appended after the last value, default a newline.
 你可以看到所有str内置的属性/函数，这比看文档牛逼多了。
 
 
+## 学会trans
+```
+def rot13(s, 
+    tm=string.maketrans(
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 
+        'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
+    )   
+    ):  
+    return s.translate(tm)
+```
 
-
+## 
