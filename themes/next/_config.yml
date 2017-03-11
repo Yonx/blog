@@ -280,10 +280,10 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-duoshuo_shortname: xuy1202
+#duoshuo_shortname: xuy1202
 
 # Disqus
-#disqus_shortname:
+#disqus_shortname: cybatk-com.disqus.com
 
 # Hypercomments
 #hypercomments_id:
@@ -309,7 +309,8 @@ duoshuo_shortname: xuy1202
 # Share
 #jiathis:
 # Warning: JiaThis does not support https.
-#add_this_id:
+# thank: https://www.addthis.com
+add_this_id: ra-58c42267b9d94914
 
 # Share
 #duoshuo_share: true
@@ -335,11 +336,11 @@ google_analytics: UA-93514438-1
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: xuy1202
-  #admin_nickname: Author
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: true
+#  user_id: xuy1202
+#  #admin_nickname: Author
 
 
 # Facebook SDK Support.
@@ -433,10 +434,9 @@ algolia_search:
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
 
-
 # Local search
 local_search:
-  enable: false
+  enable: true 
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}

@@ -17,6 +17,7 @@ npm install hexo-renderer-stylus@0.2 --save
 npm install hexo-generator-feed@1 --save
 npm install hexo-generator-sitemap@1 --save
 npm install hexo-util --save
+npm install hexo-generator-searchdb --save
 
 git clone https://github.com/iissnan/hexo-theme-next themes/next
 
