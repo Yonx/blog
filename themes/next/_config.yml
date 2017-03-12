@@ -284,6 +284,7 @@ mathjax:
 
 # Disqus
 #disqus_shortname: cybatk-com.disqus.com
+disqus_shortname: cybatk-com
 
 # Hypercomments
 #hypercomments_id:

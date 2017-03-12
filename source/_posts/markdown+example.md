@@ -4,9 +4,9 @@ date: 1984-12-02 00:00:00
 tags: example
 ---
 
-{% cq %}
-blah blah blah 
-{% endcq %}
+{% centerquote %}
+O Ever
+{% endcenterquote %}
 
 
 Head1
@@ -20,22 +20,11 @@ Head2
 
 ## sub title
 
-![](/images/touxiang.jpg)
-
 ## sub title
 
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-> id sem consectetuer libero luctus adipiscing.
-
-## sub title
-
-{% centerquote %}blah blah blah{% endcenterquote %}
-
-{% fullimage /images/touxiang.jpg, alt, title %}
 
 {% note default %} default {% endnote %}
 {% note primary %} primary {% endnote %}
@@ -44,5 +33,9 @@ Head2
 {% note warning %} warning {% endnote %}
 {% note danger  %} danger  {% endnote %}
 
+<!--
+![](/images/touxiang.jpg)
+{% fullimage /images/touxiang.jpg, alt, title %}
+-->
 
 
