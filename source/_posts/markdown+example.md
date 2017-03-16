@@ -9,6 +9,29 @@ O Ever
 {% endcenterquote %}
 
 
+{% blockquote @xuy1202 https://hexo.io/docs/tag-plugins.html %}
+!!!: hexo tag doc 
+{% endblockquote %}
+
+---
+
+{% blockquote David Levithan, Wide Awake %}
+Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
+{% endblockquote %}
+
+---
+
+{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+Every interaction is both precious and an opportunity to delight.
+{% endblockquote %}
+
+---
+
+{% blockquote %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
+{% endblockquote %}
+
+
 Head1
 ===
 
@@ -37,5 +60,6 @@ Head2
 ![](/images/touxiang.jpg)
 {% fullimage /images/touxiang.jpg, alt, title %}
 -->
+
 
 

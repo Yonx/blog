@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Cyber Security, Cyber Attack, DDoS, Scan, Scanner, DRDoS, DNS, PDNS, Security Data Process & Analysis"
+keywords: "Cyber-Security,Network-Security,网络安全,安全数据分析"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -28,7 +28,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # ---------------------------------------------------------------
 # Menu Settings
