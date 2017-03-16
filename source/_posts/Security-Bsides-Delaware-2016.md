@@ -10,7 +10,9 @@ tags:
 
 Here is the slide of my talk on [Security Bsides Delaware 2017](http://www.bsidesdelaware.com/).
 
+{% note success %} 
 ** DOWNLOAD:  [Backbone Network Security Visibility In Practice.pdf](/2016/10/16/Security-Bsides-Delaware-2016/BackboneNetworkSecurityVisibilityInPractice.pdf) **
+{% endnote %}
 
 
 
