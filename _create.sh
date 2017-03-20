@@ -1,3 +1,6 @@
+
+npm install minimatch@"3.0.2"
+
 npm install hexo-cli --save
 npm install hexo --save
 
@@ -22,8 +25,7 @@ npm install hexo-generator-searchdb --save
 git clone https://github.com/iissnan/hexo-theme-next themes/next
 
 cd themes/next
-npm install
-npm install -g bower
-npm install -g grunt-cli
+npm install bower --save
+npm install grunt-cli --save
 cd -
 
