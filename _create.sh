@@ -1,8 +1,8 @@
 
 npm install minimatch@"3.0.2"
 
-npm install hexo-cli --save
-npm install hexo --save
+npm install hexo-cli --save --build-from-source
+npm install hexo     --save --build-from-source
 
 hexo init
 
