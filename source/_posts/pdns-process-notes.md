@@ -25,7 +25,7 @@ tags:
 ![](/2017/03/13/pdns-process-notes/pdns.frame.png)
 > 由于懒，我直接抠我在FloCon2017上的talk的PPT的一页来说明。
 
-上图是一个最简单的DNS请求的全路径。一个用户在运营商提供的一个子网内，通过运营商提供的NAT IP发起DNS请求到一个OpenResolver／RecursiveServer，OpenResolver/RecursiveServer 负责完整的递归查询，将最终的IP返回给用户
+上图是一个最简单的DNS请求的全路径。一个用户在运营商提供的一个子网内，发起的DNS请求通过运营商的边界路由，到一个OpenResolver/RecursiveServer，OpenResolver/RecursiveServer 负责完整的递归查询，将最终的IP返回给用户
 
 
 ## open resolver 之上
@@ -82,10 +82,46 @@ tags:
 ---
 
 
+# 接入点处理
+
+当前我们的数据在白天忙时平均有700w records/s，record指得是query-response pairing之后提取出来的数据记录。多个数据节点数据并不是平均分配的，最大的点超过150w/s，接入的千兆网卡是打满的状态。针对这么大的数据量，系统架构，或者说数据流设计，都要依赖一个高效稳固的接入和足够灵活的数据分发方式，所以接入点的处理单独拎出来说明一下。
+
+* sensor：负责原始DNS流量的抓取，解析，配对过程，形成最终的record，然后以hash(client ip/24)为key将数据publish出来
+* hasher：接受从sensor的record数据，然后以hash(SLD)的形式将数据publish出来
+
+{% note default %}
+考虑到用户隐私，client ip可以做混淆
+{% endnote %}
+
+## 应对超大量数据
+
+* 数据水平切分，client／domain两大维度，后续详细分析
+* 传输使用Zmq，pub/sub模式，单ctx足够
+* 数据格式为protobuf。另：注意所有字段都为optional，不明白原因的去google
+* 批量合并压缩数据，zlib的Z_BEST_SPEED模式下压缩率为30%左右
+* 无锁队列，zmq的push/pull (inproc://addr)。注意，一定是消费者同质的时候才可以。消费者不同质，老老实实上lock-queue，否则一个慢消费者会拖死整个队列
+* log要异步多线程flush
+* 打点统计尽可能避免锁，可以使用__sync_XXX系列函数，也可以考虑thread::local单独打点，合并dump
+
+## 数据分割
+
+**<u>这一点尤为关键</u>**，接入的数据量巨大，不可能根据不同的需求重复传输多次，只有水平切分做好，后续的处理过程才能非常方便的扩展。
+
+我的架构里，sensor和hasher作为公共的数据获取接口，其中sensor是以hash(client ip)为key的获取接口，hasher是以hash(SLD)为key的获取接口。
+
+根据需求，如果后续的分析过程是以domain为核心的，那就从hasher来获取，所有*.test.domain都会被分发到一个同一个key下。如果想看某个client ip的情况，那就从sensor直接获取，那同一个client ip的访问行为会集中发布在同一个key上。
+
+提取SLD的过程，不要简单的从后向前数点，com.cn等多级的TLD和com等单级的TLD判断起来会比较麻烦费力。先将所有TLD数据load成为一个trie tree，来的每一条数据，将FQDN从后向前遍历到最深，然后接着遍历到结尾或者下一个.的位置即可，考虑到SLD的长度基本都会在10个字符以内，这样的算法可以认为是O(1)的。
+
+## disposable domain
+
+## 去重
+
+## “阶梯”采样
+
+---
 
 # 基本架构／数据流
-
-## 接入
 
 ## PDNS system
 
@@ -95,19 +131,7 @@ tags:
 
 ## real-time analysis system
 
-
-# 接入点处理
-
-## 应对超大量数据
-
-## 数据分割
-
-## disposable domain
-
-## 去重
-
-## “阶梯”采样
-
+---
 
 # 实时分析处理
 
