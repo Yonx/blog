@@ -1,5 +1,5 @@
 ---
-title: using [hexo + next + github page] to build a blog
+title: 使用[hexo + github + next]来构建个人博客
 date: 2017-03-11 22:48:50
 tags:
  - hexo
@@ -7,6 +7,15 @@ tags:
  - github
  - blog
 ---
+
+
+博客已经过时许久，不过我年纪渐长，记性渐差，还是需要个这么个东西来记录。
+之前blog是在自己的vps，不过时不时被gfw干掉，操作不便，学习了下当今潮流，发现hexo+github+next半天就可以搞定，而且足够满足我的需求，于是搞起。
+
+* hexo；一个基于node的静态博客生成发布引擎，简单来说，就是用户只用写markdown的文稿，后续生成页面、渲染、发布的过程都由hexo来搞定的
+* github：实际是github的page，静态博客的载体，hexo会将内容发布到用户自己github的page，然后通过page来查看。如果有自己的域名，也可以cname到自己的github的page，这样就能通过自己的域名来访问。
+* next：只是依赖hexo框架的一个主题样式，比较漂亮，而且还提供根据markdown的标题自动生成outline等辅助功能。
+
 
 ### hexo的环境配置
 直接贴脚本
