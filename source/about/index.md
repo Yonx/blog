@@ -4,7 +4,6 @@ date: 2017-03-11 20:37:36
 comments: false
 ---
 
----
 
 {% centerquote %}
 比较懒，所以说话打字会尽可能简单
@@ -15,7 +14,6 @@ comments: false
 所以如果有blog内容看不懂，不要好奇，忍了吧。。。
 {% endcenterquote %}
 
----
 
 ## INFO
 * Email: xuy1202 #at# gmail.com
