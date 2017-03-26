@@ -4,7 +4,6 @@ date: 2015-03-11 18:52:01
 tags:
  - wireshark
  - tshark
- - hijack
 ---
 
 ## 劫持tshark解包接口

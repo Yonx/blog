@@ -2,7 +2,6 @@
 title: crontab notes
 date: 2015-09-24 23:20:43
 tags:
- - cron
  - crontab
 ---
 

@@ -2,9 +2,7 @@
 title: C++ Tail Call Optimization
 date: 2017-03-09 23:39:56
 tags:
- - C++
- - Tail Call Optimization
- - Tail Call
+ - c++
  - TCO
 ---
 

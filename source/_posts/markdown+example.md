@@ -1,7 +1,8 @@
 ---
 title: hexo+next主题的markdown示范样例备忘 
 date: 1984-12-02 00:00:00
-tags: example
+tags:
+ - hexo
 
 photos:
  - http://wx3.sinaimg.cn/mw690/6c4e11d1ly1fdwwlmkoehj212w1mc12f.jpg
