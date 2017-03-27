@@ -1,15 +1,12 @@
 ---
 title: hexo+next主题的markdown示范样例备忘 
-date: 1984-12-02 00:00:00
-tags:
- - hexo
+date: 2015-01-01 00:00:00
 
 photos:
  - http://wx3.sinaimg.cn/mw690/6c4e11d1ly1fdwwlmkoehj212w1mc12f.jpg
  - http://wx4.sinaimg.cn/mw690/6c4e11d1ly1fdwwlk2kg9j212w1mcgux.jpg
  - http://wx1.sinaimg.cn/mw690/6c4e11d1ly1fdwwlnrrrhj212w1mc7cg.jpg
 ---
-
 ```markdown
 link:
  - http://cybatk.com/   <!-- 修改title的链接 -->
@@ -21,15 +18,22 @@ photos:
 ---
 ```
 
+
 {% centerquote %}
 这篇blog没有干货，所以一上来就得有点趣味
 {% endcenterquote %}
-
 ```markdown
 {% centerquote %}
 这篇blog没有干货，所以一上来就得有点趣味
 {% endcenterquote %}
 ```
+
+
+{% fullimage https://umbrella.cisco.com/blog/wp-content/themes/umbrella-blog/img/default/ArticleImage_11_banner.jpg, alttttttttt, titttttttttttle %}
+```markdown
+{% fullimage https://umbrella.cisco.com/blog/wp-content/themes/umbrella-blog/img/default/ArticleImage_11_banner.jpg, alttttttttt, titttttttttttle %}
+```
+
 
 
 {% blockquote @xuy1202 https://hexo.io/docs/tag-plugins.html %}
