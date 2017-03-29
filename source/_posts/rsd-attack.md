@@ -7,7 +7,7 @@ tags:
 ---
 
 
-{% fullimage /2017/03/25/rsd-attack/rsd.example.png, , RSD Attack Chart %}
+{% fullimage /2017/03/25/rsd-attack/rsd.example.png, , A Real Case of RSD Attack %}
 
 
 RSD, random sub domain [attack]， 也可称为 PRSD， P for Pseudo，因为所谓的随机数生成算法是“伪随机”。
@@ -77,7 +77,7 @@ zzzzzzz.example.com
 
 数据参照前一篇 [《PDNS系统设计实现总结》](/2017/03/13/pdns-process-notes/)，我们需要的是3，至少是2的位置。
 
-实现算法：
+检测方法：
 
 * 0x00 请求计数：对所有级别的FQDN做计数，类似trie-tree的结构，域名反转, www.baidu.com 反转为 com.baidu.www，按点分割，记录各级的count。RSD如果发生，父级域名的count必然有一个明显的spike，比如攻击为 xxxxx.www.baidu.com，那www.baidu.com的访问量会有一个明显的上升。这一步不是必须，但之所以要做这个判断是因为后续过程计算会很重，而这一个前置步骤，可以将大部分正常数据放过，省去不必要的计算
 * 0x01 子域名计数：RSD一大特征就是构造很多很多随机子域名，因此统计子域名个数是最重要的特征。可以使用hyperloglog算法，redis中源码写的不错，可以借鉴
