@@ -2,6 +2,19 @@
 comments: false
 ---
 
+{% note info %} 
+<!--
+
+** [中文简历](/about/resume.zh.html) ** 
+
+** [ Resume ](/about/resume.en.html) **
+
+-->
+
+程序员。
+
+{% endnote %}
+
 {% centerquote %}
 比较懒，所以说话打字会尽可能简单
 心情好，可能多说几句
@@ -13,21 +26,8 @@ comments: false
 {% endcenterquote %}
 
 
-{% note info %} 
 <!--
-
-** [中文简历](/about/resume.zh.html) ** 
-
-** [ Resume ](/about/resume.en.html) **
-
--->
-
-联系方式: 页面右下角的黑窗子图标，点一下
-Contact: bottom right black window button, click~
-
-{% endnote %}
-
-
 <iframe width="100%" height="800" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1650470733&verifier=bdd78b05&dpc=1"></iframe>
+-->
 
 
