@@ -125,10 +125,10 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 
 ### 其他
 
-* 专利: 用于无线终端访问应用时的注册方法、装置及系统        第二发明人    已授权
-* 专利: 一种数据处理方法及装置                                                  第一发明人    已授权
-* 专利: 交易数据检测方法、装置及服务器                                   第二发明人    已授权
-* 演讲: Backbone Network DRDoS Attack Monitoring and Analysis    Flocon2017      San Diego, CA USA
-* 演讲: Backbone Network Security Visibility In Practice                     BsidesDE2016         Delaware, USA
+* 专利: 用于无线终端访问应用时的注册方法、装置及系统 | 第二发明人(已授权)
+* 专利: 一种数据处理方法及装置 | 第一发明人(已授权)
+* 专利: 交易数据检测方法、装置及服务器 | 第二发明人(已授权)
+* 演讲: Backbone Network DRDoS Attack Monitoring and Analysis  -  Flocon2017, San Diego, CA USA
+* 演讲: Backbone Network Security Visibility In Practice       -  BsidesDE2016, Delaware, USA
 
 
