@@ -23,7 +23,17 @@ tags:
 
 re2/re2.h 给 RE2 类添加
 ```C++
-string RegexpDump() const { return Regexp()->Dump(); }
+ ... ...
++class Regexp {
++    public:
++        string Dump();
++};
+
+class RE2{
+    ... ...
++    string RegexpDump() const { return Regexp()->Dump(); }
+    ... ...
+};
 ```
 
 Dump方法在re2/regex.h是有的，不过没有给出实现。在re2/testing/下有类似的dump实现，不过dump出来的字符串是一坨不好看，我们修改为如下
