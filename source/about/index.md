@@ -3,16 +3,14 @@ comments: false
 ---
 
 
-{% centerquote %}
-程序员。
-比较懒，所以说话打字会尽可能简单
-心情好，可能多说几句
-大部分时候心情一般
-写这段话的时候算是心情好
-也不过就这几句
-所以如果有blog内容看不懂，应该是我说的太含糊了
-不要好奇，忍了吧。。。
-{% endcenterquote %}
+#### 职业关键词：
+
+&emsp;&emsp;网络安全  数据处理  数据分析  大规模  实时
+&emsp;&emsp;DDoS&emsp;Scanner&emsp;Threat Intelligence
+&emsp;&emsp;C++&emsp;Python&emsp;Rust&emsp;Linux&emsp;shell 
+&emsp;&emsp;HDFS&emsp;Hadoop&emsp;Hbase&emsp;MongoDB&emsp;MySQL
+&emsp;&emsp;ZMQ&emsp;Socket&emsp;IP/TCP/UDP&emsp;DNS&emsp;HTTP
+
 
 
 <!--
