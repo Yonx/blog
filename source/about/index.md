@@ -5,11 +5,9 @@ comments: false
 
 #### 职业关键词：
 
-&emsp;&emsp;网络安全  数据处理  数据分析  大规模  实时
-&emsp;&emsp;DDoS&emsp;Scanner&emsp;Threat Intelligence
-&emsp;&emsp;C++&emsp;Python&emsp;Rust&emsp;Linux&emsp;shell 
-&emsp;&emsp;HDFS&emsp;Hadoop&emsp;Hbase&emsp;MongoDB&emsp;MySQL
-&emsp;&emsp;ZMQ&emsp;Socket&emsp;IP/TCP/UDP&emsp;DNS&emsp;HTTP
+&emsp;&emsp;网络安全&emsp;数据处理&emsp;数据分析&emsp;实时大规模数据引擎设计与开发&emsp;安全工程
+&emsp;&emsp;DDoS&emsp;Scanner&emsp;Threat Intelligence&emsp;ZMQ&emsp;Socket&emsp;IP/TCP/UDP&emsp;DNS&emsp;HTTP
+&emsp;&emsp;HDFS&emsp;Hadoop&emsp;Hbase&emsp;MongoDB&emsp;MySQL&emsp;C++&emsp;Python&emsp;Rust&emsp;Linux&emsp;shell 
 
 
 
