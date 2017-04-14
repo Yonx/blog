@@ -2,10 +2,6 @@
 comments: false
 ---
 
-{% note default %}
- - 目前不考虑跳槽
-{% endnote %}
-
 
 # 徐洋
 
