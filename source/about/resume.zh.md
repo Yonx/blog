@@ -40,9 +40,12 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 
 ### 工作经验
 
-* 2013.04 － Present&emsp;&emsp;安全开发工程师&emsp;&emsp;&emsp;奇虎360 &emsp;&emsp;云引擎／网络安全研究院
-* 2012.10 － 2013.04&emsp;&emsp;服务端开发工程师&emsp;&emsp;金山云&emsp;&emsp;&emsp;云盘服务端
-* 2010.03 － 2012.10&emsp;&emsp;软件工程师&emsp;&emsp;&emsp;&emsp;&emsp;绿盟科技&emsp;&emsp;安全中心
+* 2013.04 － Present&emsp;
+&emsp;高级安全工程师&emsp;&emsp;奇虎360 - 云引擎/网络安全研究院
+* 2012.10 － 2013.04
+&emsp;服务端工程师&emsp;&emsp;&emsp;金山云 - 云盘服务端
+* 2010.03 － 2012.10
+&emsp;软件工程师&emsp;&emsp;&emsp;&emsp;绿盟科技 - 安全中心
 
 
 ---
@@ -131,8 +134,10 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 
 
 ### 教育背景
-* 2007.09 － 2010.06&emsp;&emsp;中国农业科学院&emsp;&emsp;信息所&emsp;&emsp;&emsp;管理科学与工程&emsp;&emsp;&emsp;&emsp;硕士
-* 2003.09 － 2007.06&emsp;&emsp;山东大学&emsp;&emsp;&emsp;&emsp;&emsp;管理学院&emsp;&emsp;信息管理与信息系统&emsp;&emsp;学士
+* 2007.09 － 2010.06
+&emsp;管理科学与工程 - 硕士&emsp;&emsp;&emsp;&emsp;中国农业科学院 - 信息所
+* 2003.09 － 2007.06
+&emsp;信息管理与信息系统 - 学士&emsp;&emsp;山东大学 - 管理学院
 
 
 ---
