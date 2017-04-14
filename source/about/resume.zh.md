@@ -19,8 +19,10 @@ comments: false
 xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</a>gmail.com
 -->
 
-### 工作技能
 
+---
+
+### 工作技能
 * 大规模数据异常检测方法及实现，各种流量／业务异常检测，DDoS／Scanner等检测方式方法
 * TCP/IP，HTTP，DNS等网络协议，及对应数据的分析处理
 * 大规模高并发高性能服务及引擎开发维护，基本的WEB前端技术
@@ -29,11 +31,21 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 * Hadoop/HBase/Storm大数据技术方案
 * 工作语言：C／C++／Python with Linux
 
+&emsp;&emsp;网络安全&emsp;数据处理&emsp;数据分析&emsp;实时大规模数据引擎设计与开发&emsp;安全工程
+&emsp;&emsp;DDoS&emsp;Scanner&emsp;Threat Intelligence&emsp;ZMQ&emsp;Socket&emsp;IP/TCP/UDP&emsp;DNS&emsp;HTTP
+&emsp;&emsp;HDFS&emsp;Hadoop&emsp;Hbase&emsp;MongoDB&emsp;MySQL&emsp;C++&emsp;Python&emsp;Rust&emsp;Linux&emsp;shell 
+
+---
+
+
 ### 工作经验
 
 * 2013.04 － Present&emsp;&emsp;安全开发工程师&emsp;&emsp;&emsp;奇虎360 &emsp;&emsp;云引擎／网络安全研究院
 * 2012.10 － 2013.04&emsp;&emsp;服务端开发工程师&emsp;&emsp;金山云&emsp;&emsp;&emsp;云盘服务端
 * 2010.03 － 2012.10&emsp;&emsp;软件工程师&emsp;&emsp;&emsp;&emsp;&emsp;绿盟科技&emsp;&emsp;安全中心
+
+
+---
 
 ### 项目经验
 
@@ -115,9 +127,15 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 * -- Python、QPID、PHP、Postgresql
 
 
+---
+
+
 ### 教育背景
 * 2007.09 － 2010.06&emsp;&emsp;中国农业科学院&emsp;&emsp;信息所&emsp;&emsp;&emsp;管理科学与工程&emsp;&emsp;&emsp;&emsp;硕士
 * 2003.09 － 2007.06&emsp;&emsp;山东大学&emsp;&emsp;&emsp;&emsp;&emsp;管理学院&emsp;&emsp;信息管理与信息系统&emsp;&emsp;学士
+
+
+---
 
 ### 其他
 
