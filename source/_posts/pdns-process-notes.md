@@ -11,13 +11,20 @@ tags:
 * flint: 基本的passive dns系统，domain-ip ip-domain的映射关系的历史记录查询. [passivedns.cn](https://passivedns.cn)，只对安全公司可信分析人员开放
 * flint.real: flint是所有历史记录的数据，这个flint.real则是最近一小时内的domain-ip/ip-domain的映射关系，数据实时分析的时候，实时的关系更重要
 * domain_stat: 域名访问统计，可以区分不同的请求类型，不同的返回类型，不同的数据节点
-* domain_access/client_access: 查询一段时间内，一个domain被哪些client访问，一个client都访问了哪些domain，交叉访问的记录数据
-* profile_domain/profile_client/profile_dnserv: domain/client/dnserv的profile数据，比如一个域名在一个时间点，被谁访问，来自哪些原端口，tid分别是多少，请求类型的分布是如何，返回的数据是如何分布的，响应这个domain 的dnserv都有哪些等等。在此基础上，可以实时判定诸如RSD攻击，子域名爆破，反射放大等各种安全事件
 * pdns_capture: 给定过滤条件，实时抓取最新的DNS记录数据
 * dtree：域名查找服务，给定一个模式，可以是子域名，可以是wildcard，可以是正则表达式，快速的在所有FQDN中查找符合模式的域名。很多安全分析文章都会对敏感域名打码，对我们而言，几乎天下无码。
 
+<!--
+* domain_access/client_access: 查询一段时间内，一个domain被哪些client访问，一个client都访问了哪些domain，交叉访问的记录数据
+* profile_domain/profile_client/profile_dnserv: domain/client/dnserv的profile数据，比如一个域名在一个时间点，被谁访问，来自哪些原端口，tid分别是多少，请求类型的分布是如何，返回的数据是如何分布的，响应这个domain 的dnserv都有哪些等等。在此基础上，可以实时判定诸如RSD攻击，子域名爆破，反射放大等各种安全事件
+-->
+
 这是我在当前团队做的第一个服务，2年多来也一直在改进维护，除了前端接入原始数据是同事在做，中间的数据流，处理分析，入库，查询接口，都是我在做。其中艰辛很多，也感觉学到很多，资源不够如何权衡妥协，网络不如意服务如何调度分派，数据放量如何动态扩展，很多细节如果不看代码都要忘记了。刚好年初数据放量，重新梳理代码优化了一下性能，趁机聊作记录以备忘。
 
+
+{% note danger %}
+__考虑到用户隐私，所有涉及client ip的地方要做混淆, 混淆后的数据可用于数据的关联__
+{% endnote %}
 
 {% note default %}
 出于保密的需求，具体架构不能说太细，数据库设计不会涉及，更多的是偏重功能+场景+实现妥协技巧这些容易遗忘的东西
@@ -96,10 +103,6 @@ tags:
 
 * sensor：负责原始DNS流量的抓取，解析，配对过程，形成最终的record，然后以hash(client ip/24)为key将数据publish出来
 * hasher：接受从sensor的record数据，然后以hash(SLD)的形式将数据publish出来
-
-{% note default %}
-考虑到用户隐私，client ip可以做混淆
-{% endnote %}
 
 ## 应对超大量数据
 
