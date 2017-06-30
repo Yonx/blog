@@ -54,12 +54,13 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 
 ##### 2015.01 － Present&emsp;&emsp;<u>  NetFlow实时检测  </u>&emsp;&emsp;奇虎360 - 网络安全研究院
 
+* 公开服务：全球扫描监控系统 (http://scan.netlab.360.com/),  全球DDoS攻击实时检测 (https://ddosmon.net/)
 * 对大网汇集的NetFlow数据做实时异常检测，实时检测DDoS攻击/Scanner等各种异常事件
 * 数据量：平均 30w/s, 峰值100w/s
 * 可调节数据分布处理框架，动态更新的安全规则引擎，方便的扩展数据源以及调整检测策略
 * 针对流量数据的特性，采用多层级数据模型／多触发检测的流程模型，以达到更快／更全的异常检测
 * 检测攻击包括诸如SYN flood，AMP Flood，UDP Flood，HTTP Flood，DNS Flood等，日均检出50w次
-* 检测扫描包括诸如SYN scan等半开放扫描，以及UDP/HTTP scan，暴力破解等，日均活跃scanner 5w个
+* 检测扫描包括诸如SYN scan等半开放扫描，以及UDP/HTTP scan，暴力破解等，日均活跃scanner 10w个
 * -- Linux、C++、Python、ZMQ、protobuf、HBase、MongoDB、Tornado、Nginx
 
 ##### 2015.01 － Present&emsp;&emsp;<u>  DNS数据实时分析  </u>&emsp;&emsp;奇虎360 - 网络安全研究院
@@ -67,10 +68,12 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 * 对收集到的DNS数据进行建模分析，构建profile，实时监控各种异常
 * 针对不同的异常模式，建立以FQDN／CLIENT／DNS Server不同角度的profile模型
 * 实时监控FQDN Spike／RSD Attack/DNS Reflection Attack／DGA Client／DNS Amplifier等异常
+* 公开的反射放大攻击被滥用节点检测数据: (http://data.netlab.360.com/drdos-reflector/)
 * -- Linux、C++、Python、ZMQ、protobuf、HBase、MongoDB、Tornado、Nginx
 
 ##### 2014.07 － Present&emsp;&emsp;<u>  PassiveDNS系统  </u>&emsp;&emsp;奇虎360 - 网络安全研究院
 
+* 公开服务：国内最大的PDNS数据库 (https://passivedns.cn)，累计数据240亿+
 * 实时处理被动采集的DNS数据，分发汇聚处理入库，形成pdns数据系统，提供web／command查询
 * 数据量：平均 500w/s, 峰值700w/s
 * 实时统计各域名的请求，并区分不同请求类型／不同返回类型／不同数据采集点
