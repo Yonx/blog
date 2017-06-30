@@ -81,7 +81,7 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 * 针对在线数据，完成一个实时domain2ip/ip2domain处理集群，实现域名和IP的快速互查
 * -- Linux、C++、Python、ZMQ、protobuf、HBase、Tornado、Nginx
 
-##### 2013.04 － 2014.07&emsp;&emsp;<u> 网盾－上网安全云引擎      </u>&emsp;&emsp;奇虎360 - 核心安全大流程
+##### 2013.04 － 2014.07&emsp;&emsp;<u> 网盾－上网安全云引擎      </u>&emsp;&emsp;奇虎360 - 核心安全云引擎
 
 * 为PC客户端／浏览器／手机提供一个统一的URL黑白鉴定云查接口，保护用户上网安全
 * 集成自主黑名单／外部接口／实时规则系统／白名单保护等各类型多层级的数据流程的URL黑白鉴定云服务
@@ -90,7 +90,7 @@ xuy1<a id="email_address_1" onclick="$('#email_address_1').html('202@');">XXXX</
 * 日均请求 250亿＋，且日志作为后端安全数据分析的基础数据，根据各不同产品的不同需求做数据分发
 * -- Linux、C++、protobuf、HDFS、Nginx、Storm、Memcached
 
-##### 2013.04 － 2014.07&emsp;&emsp;<u> 综合云引擎服务            </u>&emsp;&emsp;奇虎360 - 核心安全大流程
+##### 2013.04 － 2014.07&emsp;&emsp;<u> 综合云引擎服务            </u>&emsp;&emsp;奇虎360 - 核心安全云引擎
 
 * 来电秀：手机用户可以设置用户来电profile，并可以举报骚扰用户做后续来电拦截
 * 垃圾短信拦截：短信拦截云引擎，根据短信指纹鉴定短信黑白实现提前拦截
